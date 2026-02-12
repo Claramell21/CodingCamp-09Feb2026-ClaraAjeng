@@ -8,37 +8,77 @@
 </head>
 
 <body>
-<div id="navbar">
-    <div class="navdiv">
-        <div class="logo"></div><a href="./index.html"><img src="/Revou Logo.png" height="50"alt="Revou Logo"/></a></div>
-        <ul type="none"> 
-           <div class="nav-right"></div>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Profile</a></li>
-            <li><a href="#">Portofolio</a></li>
-            <li><a href="#">Message Us</a></li>
-        </ul>
-    </div>
-</div>
+    <header>
+        <!-- Logo -->
+        <div class="logo"></div>
 
- <div id="home">
- <h1>Hi Harfi, Welcome To Website
- </h1>
- <h2> Ini adalah website latihan pertama</h2>
-</div>
+        <!-- Navigation -->
+         <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
 
-<div id="headquarter">
-<h1>Our Headquarter</h1>
-<ul type="none"> 
-    <li>Jakarta</li>
-    <li>Bandung</li>
-    <li>Surabaya</li>
- </ul>
- </div>
+    <hr/>
 
-<div id="messageus">
-<h1>Message Us</h1>
-</div>
+    <main>
+        <!-- Home -->
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
+            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+        </section>
 
+         <hr/>
+
+        <!-- Our Profile -->
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Our Profile</h2>
+            <p class="mt-2">Learn more about us and our mission.</p>
+        </section>
+
+         <hr/>
+
+        <!-- Portfolio -->
+        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Our Portfolio</h2>
+            <p class="mt-2">View our latest projects and achievements.</p>
+        </section>
+
+         <hr/>
+
+       <!-- Message Us Page -->
+        <section id="message-us-page" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Us</h2>
+                <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you
+                    promptly.</p>
+            </header>
+
+            <form>
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Name:</label>
+                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="email">Email:</label>
+                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="message">Message:</label>
+                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5"
+                        required></textarea>
+                </div>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <hr/>
+
+    <footer>    
+        <p class="text-center p-4">© 2026 Yama Company. All rights reserved.</p>
+    </footer>
 </body>
 </html>

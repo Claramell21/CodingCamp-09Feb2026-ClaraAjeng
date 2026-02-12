@@ -29,10 +29,31 @@ li {
     padding: 10px;
     font-weight: bold;}
 
-#section {
+#home {
     width: 100%;
-    min-height: 300px;
+    adding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 578px;
     background-color: lightskyblue;
 }
 
+#headquarter {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: lightgoldenrodyellow;
+}
+
+#messageus {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: lightgreen;
+}
 
