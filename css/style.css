@@ -6,7 +6,16 @@
     padding: 0;
  }
 
-#navbar {
+.logo {
+    height: 75px;
+    width: 75px;
+    background-color: lightgray;
+    border-radius: 50%;
+    background-image: url(../Revou\ Logo.png);
+    background-size: cover;
+}
+
+header {
     background-color: pink;
     position: relative;
     padding-right: 10px;
@@ -27,7 +36,8 @@ li {
  li a {
     color: black;
     padding: 10px;
-    font-weight: bold;}
+    font-weight: bold;
+}
 
 #home {
     width: 100%;
@@ -38,8 +48,7 @@ li {
     min-height: 578px;
     background-color: lightskyblue;
 }
-
-#headquarter {
+#our-profile {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
@@ -48,12 +57,54 @@ li {
     background-color: lightgoldenrodyellow;
 }
 
-#messageus {
+#portfolio {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: lightgoldenrodyellow;
+}
+
+#message-us {
+    width: 100%;
     background-color: lightgreen;
+}
+
+low-header {
+    background-color: pink;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+}
+
+form {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: lightgoldenrodyellow;  
+}
+
+footer {
+   background-color: pink;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
 }
 
