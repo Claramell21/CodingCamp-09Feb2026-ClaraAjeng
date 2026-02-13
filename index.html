@@ -39,19 +39,19 @@
             <br/>
             <p>Learn more about us and our mission.</p>
             <br/>
-            <table border="1">
+            <table border="0" cellpadding="20" cellspacing="50">
                 <thead>
                     <tr>
-                        <th>Amphoreus</th>
-                        <th>Eternal Loop</th>
-                        <th>Recurrence</th>
+                        <th class="design"></th>
+                        <th class="art"></th>
+                        <th class="craft"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr> 
-                        <td>Phainon</td>
-                        <td>Neikos</td>
-                        <td>Khaslana</td>
+                        <td>Design</td>
+                        <td>Art</td>
+                        <td>Craft</td>
                     </tr>
                 </tbody>
             </table>
@@ -75,66 +75,68 @@
                     <div class="column">
                     <div class="input">
                     <label> First Name</label>
-                    <input type="text" placeholder="Input your first name..." id="firstname" onkeyup="validateFirstName()">
+                    <br/>
+                    <input class="input-field" type="text" placeholder="Input your first name..." id="firstname" onkeyup="validateFirstName()">
                     <span id="firstname-error"></span>
                     </div>
 
                     <div class="input">
                     <label> Last Name</label>
-                    <input type="text" placeholder="Input your last name..." id="lastname" onkeyup="validateLastName()">
+                    <br/>
+                    <input class="input-field" type="text" placeholder="Input your last name..." id="lastname" onkeyup="validateLastName()">
                     <span id="lastname-error"></span>
                     </div>
 
                     <div class="input">
                     <label>Email</label>
-                    <input type="text" placeholder="Curent active address..." id="email" onkeyup="validateEmail()">
+                    <br/>
+                    <input class="input-field" type="text" placeholder="Curent active address..." id="email" onkeyup="validateEmail()">
                     <span id="email-error"></span>
                     </div>
 
                     <div class="input">
                     <label>Phone</label>
-                    <input type="number" placeholder="Optional..."/>
+                    <br/>
+                    <input class="input-field" type="number" placeholder="Optional..."/>
                     </div>
 
                     <div class="input">
                     <label>What are you inquiring about?</label>
-                    <select>
+                    <br/>
+                    <select class="input-select">
                     <option>General Question</option>
                     <option>Refund Policy</option>
                     <option>Event Collaboration</option>
                     <option>Sponsorship</option>
                     <option>Consultation</option>
+                    <option>Other</option>
                     </select>
-                    </div>
-
-                    <div class="input">
-                    <label>Send Your Message</label>
-                    <textarea rows="5" cols="30"
-                    placeholder="We would like to hear more from you! Our team will contact you shorty..."></textarea><required/>
-                    <span id="message-error"> Message is not filled yet!</span>
                     </div>
 
                     <div class="checkbox">
                     <input type="checkbox"/>I have made sure everything filled is correct
                     </div>
-
-                    <div class="submit">
-                    <button type="submit">Send</button>
-                    <span id="submit-error"> Please fill all required fields!</span>
-                    </div>
                     </div>
 
                     <div class="column">
-                    <textarea rows="10" cols="40"
-                    placeholder="Send us your message! We will contact you shorty..."></textarea><required/>
+                    <label>Send Your Message</label>
+                    <textarea class="input-message"  rows="12" cols="30"
+                    placeholder="We would like to hear more from you! Our team will contact you shortly..." id="message" onkeyup="validateMessage()"></textarea><required/>
+                    <span id="message-error"></span>
                     </div>
                 </div>
+                    
+                    <div class="submit">
+                    <button onclick="return validateForm()">Send</button>
+                    <span id="submit-error"></span>
+                    </div>
+                    
             </form>
         </section>
     </main>
 
     <footer>    
-        <p>© 2026 Yama Company. All rights reserved.</p>
+        <p>© 2026 Clara Company. All rights reserved.</p>
     </footer>
 
      <extra>    

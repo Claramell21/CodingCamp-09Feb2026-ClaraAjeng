@@ -27,7 +27,7 @@ function validateFirstName(){
         firstnameError.innerHTML = 'First name is not filled yet!';
         return false;
         }
-        firstnameError.innerHTML ='valid';
+        firstnameError.innerHTML ='Valid';
         return true;
 }
 
@@ -37,7 +37,7 @@ function validateLastName(){
         lastnameError.innerHTML = 'Last name is not filled yet!';
         return false;
         }
-        lastnameError.innerHTML ='valid';
+        lastnameError.innerHTML ='Valid';
         return true;
 }
 
@@ -51,22 +51,31 @@ function validateEmail(){
         emailError.innerHTML = 'Email Invalid'
         return false;
         }
-        emailError.innerHTML ='valid';
+        emailError.innerHTML ='Valid';
         return true;
 }
 
+function validateMessage(){
+    var message = document.getElementById('message').value;
+    var required = 30
+    var left = required - message.length;
 
-
-
-
+    if(left > 0){
+    messageError.innerHTML = 'Message are too short!';
+    return false;
+    }
+    messageError.innerHTML = 'Valid';
+    return true;
+}
 
 function validateForm() { 
 
-
-
-
-
-
-
-    
+    if (!validateFirstName() || !validateLastName() || !validateEmail() || !validateMessage()) {
+        submitError.style.display = 'block';
+        submitError.innerHTML = 'Please make sure to fill the form correctly!';
+        self.setTimeout(function(){submitError.style.display = 'none';}, 3000);
+        return false;
+    }
+    messageError.innerHTML = 'Valid';
+    return true;
 }

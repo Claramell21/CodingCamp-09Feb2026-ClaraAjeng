@@ -11,10 +11,36 @@
     width: 50px;
     background-color: lightgray;
     border-radius: 50%;
-    background-image: url(https://unsplash.com/photos/selective-focus-photography-of-pink-petaled-flower-EfhCUc_fjrU);
+    background-image: url(https://images.unsplash.com/photo-1601370552761-d129028bd833?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
 }
 
+.design {
+    height: 100px;
+    width: 100px;
+    background-color: lightgray;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1601370552761-d129028bd833?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+.art {
+    height: 100px;
+    width: 100px;
+    background-color: lightgray;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1601370552761-d129028bd833?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+.craft {
+    height: 100px;
+    width: 100px;
+    background-color: lightgray;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1601370552761-d129028bd833?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
 
 header {
     background-color: pink;
