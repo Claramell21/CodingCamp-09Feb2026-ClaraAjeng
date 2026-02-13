@@ -11,7 +11,7 @@
     width: 50px;
     background-color: lightgray;
     border-radius: 50%;
-    background-image: url(../Revou\ Logo.png);
+    background-image: url(https://unsplash.com/photos/selective-focus-photography-of-pink-petaled-flower-EfhCUc_fjrU);
     background-size: cover;
 }
 
@@ -135,6 +135,10 @@ extra {
 
 .column {
   flex: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+margin-bottom: 5px;
 }
 
 .input span{
@@ -156,3 +160,45 @@ textarea::placeholder {
   padding-bottom: 5px;
   transform: translateY(10px);
 }
+
+input {
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.input-field {
+border: solid 1px;
+outline: none;
+border-radius: 5px;
+}
+
+.input-select {
+border: solid 1px;
+outline: none;
+border-radius: 5px;
+margin-top: 5px;
+margin-bottom: 5px;
+cursor: pointer;
+}
+
+.input-message {
+border: solid 1px;
+outline: none;
+border-radius: 5px;
+margin-top: 5px;
+margin-bottom: 5px;
+cursor: pointer;
+}
+
+button {
+background-color: pink;
+border: solid 1px;
+outline: none;
+border-radius: 5px;
+min-width: 100px;
+cursor: pointer;
+}
+
+
