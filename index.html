@@ -73,16 +73,31 @@
             <form>
                 <div class="info">
                     <div class="column">
-                    <label>Name</label>
-                    <input type="text" placeholder="" required/>
-                    <br/>
+                    <div class="input">
+                    <label> First Name</label>
+                    <input type="text" placeholder="Input your first name..." id="firstname" onkeyup="validateFirstName()">
+                    <span id="firstname-error"></span>
+                    </div>
+
+                    <div class="input">
+                    <label> Last Name</label>
+                    <input type="text" placeholder="Input your last name..." id="lastname" onkeyup="validateLastName()">
+                    <span id="lastname-error"></span>
+                    </div>
+
+                    <div class="input">
                     <label>Email</label>
-                    <input type="text" placeholder="Currently active address" required/>
-                    <br/>
+                    <input type="text" placeholder="Curent active address..." id="email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                    </div>
+
+                    <div class="input">
                     <label>Phone</label>
-                    <input type="number" placeholder="Optional"/>
-                    <br/>
-                    <label>Inquiries</label>
+                    <input type="number" placeholder="Optional..."/>
+                    </div>
+
+                    <div class="input">
+                    <label>What are you inquiring about?</label>
                     <select>
                     <option>General Question</option>
                     <option>Refund Policy</option>
@@ -90,14 +105,23 @@
                     <option>Sponsorship</option>
                     <option>Consultation</option>
                     </select>
-                    <br/>
-                    <label>Message</label>
+                    </div>
+
+                    <div class="input">
+                    <label>Send Your Message</label>
                     <textarea rows="5" cols="30"
-                    placeholder="Send us your message! We will contact you shorty..."></textarea><required/>
-                    <br/>
+                    placeholder="We would like to hear more from you! Our team will contact you shorty..."></textarea><required/>
+                    <span id="message-error"> Message is not filled yet!</span>
+                    </div>
+
+                    <div class="checkbox">
                     <input type="checkbox"/>I have made sure everything filled is correct
-                    <br/>
+                    </div>
+
+                    <div class="submit">
                     <button type="submit">Send</button>
+                    <span id="submit-error"> Please fill all required fields!</span>
+                    </div>
                     </div>
 
                     <div class="column">

@@ -59,7 +59,7 @@ section {
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    min-height: 400px;
+    min-height: 600px;
     background-color: lightgoldenrodyellow;
 }
 
@@ -75,7 +75,6 @@ section {
 
 #message-us {
     width: 100%;
-    min-height: 2%;
     background-color: lightgreen;
 }
 
@@ -126,23 +125,34 @@ extra {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 150px;
+    min-height: 200px;
 }
 
 .info {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .column {
   flex: 50%;
 }
 
+.input span{
+display: flex;
+font-size: 14px;
+color: red;
+}
+
+.submit span{
+display: flex;
+font-size: 14px;
+color: red;
+}
+
 textarea::placeholder {
-   padding-right: 5px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   transform: translateY(10px);
 }
