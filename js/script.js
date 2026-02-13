@@ -3,7 +3,7 @@ welcomeMessage();
 // Welcome Message Function
 function welcomeMessage() {
     // Show Popup
-    let name = prompt("Welcome to Yama Company! What is your name?");
+    let name = prompt("Welcome to Clara Company! What is your name?");
 
     // validate input
     if (name == null || name.trim() === "") {
@@ -12,7 +12,7 @@ function welcomeMessage() {
     }
 
     // Display Welcome Message
-    document.getElementById('welcome-speech').innerHTML = `Hello, ${name}! Welcome to Yama Company.`;
+    document.getElementById('welcome-speech').innerHTML = `Hello, ${name}! Welcome to Clara Company.`;
 }
 
 function validateForm() { }

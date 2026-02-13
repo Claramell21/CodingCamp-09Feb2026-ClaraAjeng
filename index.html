@@ -10,75 +10,114 @@
 <body>
     <header>
         <!-- Logo -->
-        <div class="logo"></div>
+        <a href="#home"> <div class="logo"></div></a>
+        
 
         <!-- Navigation -->
-         <nav class="flex">
-            <a class="border rounded p-2" href="#home-page">Home</a>
-            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
-            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
-            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+         <nav class="fixed-top">
+            <ul type="none"> 
+                <div class="nav-right"></div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-profile">Our Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+        </ul>
         </nav>
     </header>
 
-    <hr/>
-
     <main>
         <!-- Home -->
-        <section id="home-page" class="min-h-[500px] text-center content-center">
+        <section id="home" class="min-h-[500px] text-center content-center">
             <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
+            <br/>
             <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
         </section>
 
-         <hr/>
-
         <!-- Our Profile -->
-        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">Our Profile</h2>
-            <p class="mt-2">Learn more about us and our mission.</p>
+        <section id="our-profile">
+            <h2>Our Profile</h2>
+            <br/>
+            <p>Learn more about us and our mission.</p>
+            <br/>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Amphoreus</th>
+                        <th>Eternal Loop</th>
+                        <th>Recurrence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td>Phainon</td>
+                        <td>Neikos</td>
+                        <td>Khaslana</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-
-         <hr/>
 
         <!-- Portfolio -->
-        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">Our Portfolio</h2>
-            <p class="mt-2">View our latest projects and achievements.</p>
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <br/>
+            <p>View our latest projects and achievements.</p>
         </section>
 
-         <hr/>
-
-       <!-- Message Us Page -->
-        <section id="message-us-page" class="min-h-[500px] mx-8">
-            <header>
-                <h2 class="text-xl font-bold">Message Us</h2>
-                <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you
-                    promptly.</p>
-            </header>
+       <!-- Message Us -->
+        <section id="message-us">
+            <low-header>
+                <h2>Message Us</h2>
+            </low-header>
 
             <form>
-                <div class="mb-4">
-                    <label class="block mb-2" for="name">Name:</label>
-                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+                <div class="info">
+                    <div class="column">
+                    <label>Name</label>
+                    <input type="text" placeholder="" required/>
+                    <br/>
+                    <label>Email</label>
+                    <input type="text" placeholder="Currently active address" required/>
+                    <br/>
+                    <label>Phone</label>
+                    <input type="number" placeholder="Optional"/>
+                    <br/>
+                    <label>Inquiries</label>
+                    <select>
+                    <option>General Question</option>
+                    <option>Refund Policy</option>
+                    <option>Event Collaboration</option>
+                    <option>Sponsorship</option>
+                    <option>Consultation</option>
+                    </select>
+                    <br/>
+                    <label>Message</label>
+                    <textarea rows="5" cols="30"
+                    placeholder="Send us your message! We will contact you shorty..."></textarea><required/>
+                    <br/>
+                    <input type="checkbox"/>I have made sure everything filled is correct
+                    <br/>
+                    <button type="submit">Send</button>
+                    </div>
+
+                    <div class="column">
+                    <textarea rows="10" cols="40"
+                    placeholder="Send us your message! We will contact you shorty..."></textarea><required/>
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <label class="block mb-2" for="email">Email:</label>
-                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
-                </div>
-                <div class="mb-4">
-                    <label class="block mb-2" for="message">Message:</label>
-                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5"
-                        required></textarea>
-                </div>
-                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
             </form>
         </section>
     </main>
 
-    <hr/>
-
     <footer>    
-        <p class="text-center p-4">© 2026 Yama Company. All rights reserved.</p>
+        <p>© 2026 Yama Company. All rights reserved.</p>
     </footer>
+
+     <extra>    
+        <br/>
+    </extra>
+
+     <!-- JavaScript External -->
+    <script src="js/script.js"></script>
 </body>
 </html>
